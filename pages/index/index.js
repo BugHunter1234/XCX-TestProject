@@ -5,7 +5,8 @@ Page({
   //页面的初始数据
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    changeText: 'changeText'
   },
   onLoad: function (options) {
     //生命周期函数--监听页面加载
@@ -49,11 +50,23 @@ Page({
   onShareAppMessage: function () {
     //用户点击右上角分享
     console.log('index onShareAppMessage');
+    return {
+      title: 'firstTitle',
+      path: '/page/'
+    }
   },
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  changeTextTap: function () {
+    console.log("changeTextTap " + this.data.changeText2);
+    var value = this.data.changeText2 || 0;
+    value = value * 1 + 1;
+    this.setData({
+      changeText2: value
+    });
   }
 })

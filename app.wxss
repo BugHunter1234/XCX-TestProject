@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.text-description{
+  /*描述信息*/
+  font-size: 14px;
+  color: #888888;
+}

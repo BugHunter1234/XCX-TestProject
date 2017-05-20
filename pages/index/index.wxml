@@ -1,10 +1,15 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
+  <view bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <text class="text-description">---事件绑定---start---</text>
+  <text bindtap="changeTextTap">{{changeText}}</text>
+  <text>---{{changeText2}}---end---</text>
+  <text>---事件绑定---</text>
+  <checkbox checked="{{true}}"> </checkbox>
 </view>
