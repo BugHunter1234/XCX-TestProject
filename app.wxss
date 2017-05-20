@@ -1,4 +1,5 @@
 /**app.wxss**/
+
 .container {
   height: 100%;
   display: flex;
@@ -7,10 +8,46 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
 
-.text-description{
-  /*描述信息*/
+.base-text-num {
+  /*数字-文字样式*/
+  font-size: 40px;
+  color: black;
+}
+
+.base-text-title {
+  /*标题-文字样式*/
+  font-size: 20px;
+  color: black;
+}
+
+.base-text-button-big {
+  /*大按钮-文字样式*/
+  font-size: 18px;
+  color: black;
+}
+
+.base-text-content {
+  /*内容-文字样式*/
+  font-size: 17px;
+  color: black;
+}
+
+.base-text-description {
+  /*描述-文字样式*/
   font-size: 14px;
-  color: #888888;
+  color: #888;
+}
+
+.base-text-help {
+  /*辅助-文字样式*/
+  font-size: 13px;
+  color: #576b95;
+}
+
+.base-text-explain {
+  /*说明-文字样式*/
+  font-size: 11px;
+  color: #b2b2b2;
 }

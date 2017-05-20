@@ -6,7 +6,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    changeText: 'changeText'
+    logsLoadNum: '0'
   },
   onLoad: function (options) {
     //生命周期函数--监听页面加载
@@ -55,12 +55,25 @@ Page({
       path: '/page/'
     }
   },
-  //事件处理函数
+  /**
+  * 打开测试样式页面
+  */
+  testStyleTap: function () {
+    wx.navigateTo({
+      url: '../teststyle/teststyle'
+    })
+  },
+  /**
+   * 打开logs信息页面
+   */
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+  /**
+   * 每点击一次 +1
+   */
   changeTextTap: function () {
     console.log("changeTextTap " + this.data.changeText2);
     var value = this.data.changeText2 || 0;
@@ -68,5 +81,22 @@ Page({
     this.setData({
       changeText2: value
     });
+  },
+  /**
+   * 显示app的globalData的logsLoadNum
+   */
+  logLoadNumTap: function () {
+    console.log('showlogLoadNumTap ' + app.globalData.logsLoadNum);
+    this.setData({
+      logsLoadNum: app.globalData.logsLoadNum
+    });
+  },
+  tapName: function (event) {
+    console.log("tapName" + event);
+    console.dir(event);
+  },
+  dataSetTap: function (event) {
+    console.log("dataSetTap" + event);
+    console.dir(event);
   }
 })

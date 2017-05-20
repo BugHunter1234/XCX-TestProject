@@ -1,0 +1,4 @@
+<!--示例模板-->
+<template name="item">
+  <text>{{text}}</text>
+</template>

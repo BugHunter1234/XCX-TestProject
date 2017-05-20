@@ -1,10 +1,10 @@
 //logs.js
-var util = require('../../utils/util.js');
+var util = require('../../utils/js/util.js');
 //获取应用实例
 var app = getApp()
 Page({
   data: {
-    logs: []
+    logs: [],
   },
   onLoad: function () {
     console.log('logs onLoad');
@@ -13,7 +13,8 @@ Page({
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(function (log) {
         return util.formatTime(new Date(log))
-      })
+      }),
+      logsLoadNum: app.globalData.logsLoadNum
     });
     var page = getCurrentPages();
     console.dir(page);

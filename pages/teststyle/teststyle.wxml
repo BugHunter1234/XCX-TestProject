@@ -1,0 +1,10 @@
+<view class="test-container">
+  <text>测试样式</text>
+  <view class="base-text-num">base-text-num</view>
+  <view class="base-text-title">base-text-title</view>
+  <view class="base-text-button-big">base-text-button-big</view>
+  <view class="base-text-content">base-text-content</view>
+  <view class="base-text-description">base-text-description</view>
+  <view class="base-text-help">base-text-help</view>
+  <view class="base-text-explain">base-text-explain</view>
+</view>
