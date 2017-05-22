@@ -1,0 +1,35 @@
+<!--testcom_viewcontainer.wxml-->
+<view class="base-ta-center">
+  <view style="margin-bottom:20px">视图容器</view>
+  <view>hover 点击效果</view>
+  <view hover-class="base-bc-green">hover-class</view>
+  <view hover-class="base-bc-green" hover-start-time="1500">hover-class hover-start-time</view>
+  <view hover-class="base-bc-green" hover-stay-time="1500">hover-class hover-stay-time</view>
+  <view style="margin-top:20px">scroll-view 可滚动视图区域</view>
+  <view>横向滚动</view>
+  <view style="text-align:left;margin-left:10%;">
+    <view>xScrollLeft:{{xScrollLeft}}</view>
+    <view>xScrollTop:{{xScrollTop}}</view>
+    <view>xScrollHeight:{{xScrollHeight}}</view>
+    <view>xScrollWidth:{{xScrollWidth}}</view>
+    <view>xDeltaX:{{xDeltaX}}</view>
+    <view>xDeltaY:{{xDeltaY}}</view>
+  </view>
+  <scroll-view class="base-scroll-view-x" scroll-x="true" scroll-with-animation="true" bindscroll="xbindscroll" scroll-into-view="{{xsInToView}}" style="height:100px;line-height:100px;">
+    <view id="x_0" class="base-scroll-view-x-item base-bc-red" style="">x_0</view>
+    <view id="x_1" class="base-scroll-view-x-item base-bc-green">x_1</view>
+    <view id="x_2" class="base-scroll-view-x-item base-bc-blue">x_2</view>
+    <view id="x_3" class="base-scroll-view-x-item base-bc-red">x_3</view>
+    <view id="x_4" class="base-scroll-view-x-item base-bc-green">x_4</view>
+    <view id="x_5" class="base-scroll-view-x-item base-bc-blue">x_5</view>
+  </scroll-view>
+  <view>竖向滚动</view>
+  <scroll-view scroll-y="true" style="height:100px;line-height:100px;">
+    <view id="y_0" class="base-bc-red" style="">y_0</view>
+    <view id="y_1" class="base-bc-green">y_1</view>
+    <view id="y_2" class="base-bc-blue">y_2</view>
+    <view id="y_3" class="base-bc-red">y_3</view>
+    <view id="y_4" class="base-bc-green">y_4</view>
+    <view id="y_5" class="base-bc-blue">y_5</view>
+  </scroll-view>
+</view>

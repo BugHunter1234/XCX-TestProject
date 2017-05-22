@@ -1,0 +1,8 @@
+<!--testcomponents.wxml-->
+<view class="base-ta-center">
+  <view style="margin-bottom:20px">测试组件</view>
+  <view bindtap="navigateTo" data-value="0">
+    视图容器
+    <view>view scroll-view swiper movable-view</view>
+  </view>
+</view>

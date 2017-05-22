@@ -1,5 +1,5 @@
 <!--testbind.wxml-->
-<view class="base-text-align-center">
+<view class="base-ta-center">
   <view style="margin-bottom:20px">测试事件绑定</view>
   <view bindtap="changeTextTap">changeTextTap</view>
   <view>---num---{{changeText}}---</view>

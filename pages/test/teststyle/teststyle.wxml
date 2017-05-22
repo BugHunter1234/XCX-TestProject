@@ -1,4 +1,4 @@
-<view class="base-text-align-center">
+<view class="base-ta-center">
   <text>测试样式</text>
   <view class="base-text-num test-background">base-text-num</view>
   <view class="base-text-title">base-text-title</view>

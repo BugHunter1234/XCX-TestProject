@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="base-container">
   <view class="userinfo" bindtap="navigateTo" data-value="0">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -8,4 +8,5 @@
   <view bindtap="navigateTo" data-value="2">测试事件绑定</view>
   <view bindtap="navigateTo" data-value="3">测试循环</view>
   <view bindtap="navigateTo" data-value="4">测试模板</view>
+  <view bindtap="navigateTo" data-value="5">测试组件</view>
 </view>

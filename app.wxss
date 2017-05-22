@@ -1,6 +1,6 @@
 /**app.wxss**/
 
-.container {
+.base-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,47 +11,75 @@
 }
 
 .base-text-num {
-  /*数字-文字样式*/
+  /*文字样式-数字*/
   font-size: 40px;
   color: black;
 }
 
 .base-text-title {
-  /*标题-文字样式*/
+  /*文字样式-标题*/
   font-size: 20px;
   color: black;
 }
 
 .base-text-button-big {
-  /*大按钮-文字样式*/
+  /*文字样式-大按钮*/
   font-size: 18px;
   color: black;
 }
 
 .base-text-content {
-  /*内容-文字样式*/
+  /*文字样式-内容*/
   font-size: 17px;
   color: black;
 }
 
 .base-text-description {
-  /*描述-文字样式*/
+  /*文字样式-描述*/
   font-size: 14px;
   color: #888;
 }
 
 .base-text-help {
-  /*辅助-文字样式*/
+  /*文字样式-辅助*/
   font-size: 13px;
   color: #576b95;
 }
 
 .base-text-explain {
-  /*说明-文字样式*/
+  /*文字样式-说明*/
   font-size: 11px;
   color: #b2b2b2;
 }
 
-.base-text-align-center{
+.base-ta-center {
+  /*居中显示*/
   text-align: center;
+}
+
+.base-bc-green {
+  /*背景-绿色*/
+  background-color: green;
+}
+
+.base-bc-red {
+  /*背景-红色*/
+  background-color: red;
+}
+
+.base-bc-blue {
+  /*背景-篮色*/
+  background-color: blue;
+}
+
+.base-scroll-view-x {
+  /*横向滚动样式*/
+  width: 100%;
+  white-space: nowrap;
+}
+
+.base-scroll-view-x .base-scroll-view-x-item {
+  /*横向滚动item样式*/
+  display: inline-block;
+  width: 100%;
 }

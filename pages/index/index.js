@@ -69,19 +69,23 @@ Page({
         break;
       case "1":
         //打开测试样式页面
-        util.navigateTo("../teststyle/teststyle");
+        util.navigateTo("../test/teststyle/teststyle");
         break;
       case "2":
         //打开测试事件绑定页面
-        util.navigateTo("../testbind/testbind");
+        util.navigateTo("../test/testbind/testbind");
         break;
       case "3":
         //打开测试循环页面
-        util.navigateTo("../testloop/testloop");
+        util.navigateTo("../test/testloop/testloop");
         break;
       case "4":
         //打开测试模板页面
-        util.navigateTo("../testtemplate/testtemplate");
+        util.navigateTo("../test/testtemplate/testtemplate");
+        break;
+      case "5":
+        //打开测试组件页面
+        util.navigateTo("../test/testcomponents/testcom_home/testcom_home");
         break;
       default:
         break;

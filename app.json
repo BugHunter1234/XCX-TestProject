@@ -2,10 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/testbind/testbind",
-    "pages/teststyle/teststyle",
-    "pages/testloop/testloop",
-    "pages/testtemplate/testtemplate"
+    "pages/test/testbind/testbind",
+    "pages/test/teststyle/teststyle",
+    "pages/test/testloop/testloop",
+    "pages/test/testtemplate/testtemplate",
+    "pages/test/testcomponents/testcom_home/testcom_home",
+    "pages/test/testcomponents/testcom_viewcontainer/testcom_viewcontainer"
   ],
   "window": {
     "backgroundTextStyle": "light",
