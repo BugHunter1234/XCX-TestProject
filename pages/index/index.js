@@ -1,12 +1,12 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var util = require('../../utils/js/util.js');
+var app = getApp();
 Page({
   //页面的初始数据
   data: {
     motto: 'Hello World',
     userInfo: {},
-    logsLoadNum: '0'
   },
   onLoad: function (options) {
     //生命周期函数--监听页面加载
@@ -56,47 +56,35 @@ Page({
     }
   },
   /**
-  * 打开测试样式页面
-  */
-  testStyleTap: function () {
-    wx.navigateTo({
-      url: '../teststyle/teststyle'
-    })
-  },
-  /**
-   * 打开logs信息页面
+   * 打开新页面
    */
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  /**
-   * 每点击一次 +1
-   */
-  changeTextTap: function () {
-    console.log("changeTextTap " + this.data.changeText2);
-    var value = this.data.changeText2 || 0;
-    value = value * 1 + 1;
-    this.setData({
-      changeText2: value
-    });
-  },
-  /**
-   * 显示app的globalData的logsLoadNum
-   */
-  logLoadNumTap: function () {
-    console.log('showlogLoadNumTap ' + app.globalData.logsLoadNum);
-    this.setData({
-      logsLoadNum: app.globalData.logsLoadNum
-    });
-  },
-  tapName: function (event) {
-    console.log("tapName" + event);
+  navigateTo: function (event) {
+    console.log("index navigateTo" + event);
     console.dir(event);
-  },
-  dataSetTap: function (event) {
-    console.log("dataSetTap" + event);
-    console.dir(event);
+    console.log("data-value" + event.currentTarget.dataset.value);
+    switch (event.currentTarget.dataset.value) {
+      case "0":
+        //打开logs信息页面
+        util.navigateTo("../logs/logs");
+        break;
+      case "1":
+        //打开测试样式页面
+        util.navigateTo("../teststyle/teststyle");
+        break;
+      case "2":
+        //打开测试事件绑定页面
+        util.navigateTo("../testbind/testbind");
+        break;
+      case "3":
+        //打开测试循环页面
+        util.navigateTo("../testloop/testloop");
+        break;
+      case "4":
+        //打开测试模板页面
+        util.navigateTo("../testtemplate/testtemplate");
+        break;
+      default:
+        break;
+    }
   }
 })

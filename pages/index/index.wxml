@@ -1,21 +1,11 @@
 <!--index.wxml-->
-<import src="../../utils/template/template.wxml" />
 <view class="container">
-  <view bindtap="bindViewTap" class="userinfo">
+  <view class="userinfo" bindtap="navigateTo" data-value="0">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-  <view bindtap="testStyleTap">teststyle</view>
-  <text bindtap="changeTextTap">changeTextTap</text>
-  <text>---{{changeText2}}---end---</text>
-  <text bindtap="logLoadNumTap">showlogLoadNumTap</text>
-  <text>{{logsLoadNum}}</text>
-  <checkbox checked="{{true}}"> </checkbox>
-  <view wx:for="{{[1, 2, 3]}}">
-    <text>{{index}}*{{item}}={{index*item}}</text>
-  </view>
-  <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
-  <view data-alphaBEta="3" data-alphaBeta="2" data-alpha-b-eta="1" bindtap="dataSetTap"> DataSet Test </view>
-  <template is="item" data="{{text: 'template模板'}}" />
-  <include src="../../utils/template/testinclude.wxml"/>
+  <view bindtap="navigateTo" data-value="1">测试样式</view>
+  <view bindtap="navigateTo" data-value="2">测试事件绑定</view>
+  <view bindtap="navigateTo" data-value="3">测试循环</view>
+  <view bindtap="navigateTo" data-value="4">测试模板</view>
 </view>

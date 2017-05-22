@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/teststyle/teststyle"
+    "pages/testbind/testbind",
+    "pages/teststyle/teststyle",
+    "pages/testloop/testloop",
+    "pages/testtemplate/testtemplate"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -51,3 +51,7 @@
   font-size: 11px;
   color: #b2b2b2;
 }
+
+.base-text-align-center{
+  text-align: center;
+}

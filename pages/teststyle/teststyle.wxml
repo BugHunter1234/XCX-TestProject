@@ -1,6 +1,6 @@
-<view class="test-container">
+<view class="base-text-align-center">
   <text>测试样式</text>
-  <view class="base-text-num">base-text-num</view>
+  <view class="base-text-num test-background">base-text-num</view>
   <view class="base-text-title">base-text-title</view>
   <view class="base-text-button-big">base-text-button-big</view>
   <view class="base-text-content">base-text-content</view>
