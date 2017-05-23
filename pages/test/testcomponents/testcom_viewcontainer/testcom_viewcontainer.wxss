@@ -1,1 +1,5 @@
 /* testcom_viewcontainer.wxss */
+
+.test {
+  background-color: darkorchid;
+}

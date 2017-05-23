@@ -63,6 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  /**
+   * 横向滑动监听
+   */
   xbindscroll: function (event) {
     // console.log('xbindscroll' + event);
     // console.dir(event);
@@ -74,5 +77,15 @@ Page({
       xDeltaX: event.detail.deltaX,
       xDeltaY: event.detail.deltaY
     });
+  },
+  /**
+   * 滑块变化
+   */
+  swiperChange: function (event) {
+    console.log('swiperChange' + event);
+    console.dir(event);
+    this.setData({
+      swiperCurrent: event.detail.current
+    })
   }
 })

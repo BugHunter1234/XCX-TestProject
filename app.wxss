@@ -72,6 +72,11 @@
   background-color: blue;
 }
 
+.base-bc-gold {
+  /*背景-金色*/
+  background-color: gold;
+}
+
 .base-scroll-view-x {
   /*横向滚动样式*/
   width: 100%;

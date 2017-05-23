@@ -1,11 +1,11 @@
 <!--testcom_viewcontainer.wxml-->
 <view class="base-ta-center">
   <view style="margin-bottom:20px">视图容器</view>
-  <view>hover 点击效果</view>
+  <view class="base-bc-gold">hover 点击效果</view>
   <view hover-class="base-bc-green">hover-class</view>
   <view hover-class="base-bc-green" hover-start-time="1500">hover-class hover-start-time</view>
   <view hover-class="base-bc-green" hover-stay-time="1500">hover-class hover-stay-time</view>
-  <view style="margin-top:20px">scroll-view 可滚动视图区域</view>
+  <view style="margin-top:20px" class="base-bc-gold">scroll-view 可滚动视图区域</view>
   <view>横向滚动</view>
   <view style="text-align:left;margin-left:10%;">
     <view>xScrollLeft:{{xScrollLeft}}</view>
@@ -32,4 +32,12 @@
     <view id="y_4" class="base-bc-green">y_4</view>
     <view id="y_5" class="base-bc-blue">y_5</view>
   </scroll-view>
+  <view style="margin-top:20px" class="base-bc-gold">swiper 滑块视图容器</view>
+  <view> current:{{swiperCurrent}}</view>
+  <swiper style="height:100px;" indicator-dots="true" indicator-color="white" indicator-active-color="deepskyblue" autoplay="true" bindchange="swiperChange" circular="true">
+    <swiper-item class="base-bc-red" style="line-height:100px;">a</swiper-item>
+    <swiper-item class="base-bc-green">b</swiper-item>
+    <swiper-item>c</swiper-item>
+    <swiper-item class="base-bc-blue">d</swiper-item>
+  </swiper>
 </view>
