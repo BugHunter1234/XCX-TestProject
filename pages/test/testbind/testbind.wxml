@@ -1,8 +1,11 @@
 <!--testbind.wxml-->
 <view class="base-ta-center">
   <view style="margin-bottom:20px">测试事件绑定</view>
+  <!--记录点击次数-->
   <view bindtap="changeTextTap">changeTextTap</view>
   <view>---num---{{changeText}}---</view>
+  <!--点击事件返回的eventObject-->
   <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+  <!--点击事件返回的eventObject中数据的绑定-->
   <view data-alphaBEta="3" data-alphaBeta="2" data-alpha-b-eta="1" bindtap="dataSetTap"> DataSet Test </view>
 </view>

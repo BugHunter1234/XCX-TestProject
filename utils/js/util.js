@@ -12,7 +12,7 @@ function formatTime(date) {
 }
 
 /**
- * n的长度为1补零
+ * 如果n的长度为1补零
  */
 function formatNumber(n) {
   n = n.toString()
@@ -20,7 +20,7 @@ function formatNumber(n) {
 }
 
 /**
- * 显示某个页面
+ * 打开某个页面
  */
 function navigateTo(url) {
   wx.navigateTo({
@@ -28,6 +28,9 @@ function navigateTo(url) {
   });
 }
 
+/**
+ * 开放方法
+ */
 module.exports = {
   formatTime: formatTime,
   navigateTo: navigateTo

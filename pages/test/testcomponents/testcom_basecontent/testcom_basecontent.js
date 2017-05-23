@@ -1,12 +1,13 @@
-// testcomponents.js
-var util = require('../../../../utils/js/util.js');
+// testcom_basecontent.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    iconArray: ['success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'],
+    iconSize: [10, 20, 30, 40, 50],
+    iconColor: ['red', 'green', 'blue', 'gold']
   },
 
   /**
@@ -63,25 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  /**
-   * 打开新页面
-   */
-  navigateTo: function (event) {
-    console.log("index navigateTo" + event);
-    console.dir(event);
-    console.log("data-value" + event.currentTarget.dataset.value);
-    switch (event.currentTarget.dataset.value) {
-      case "0":
-        //打开视图容器页面
-        util.navigateTo("../testcom_viewcontainer/testcom_viewcontainer");
-        break;
-      case "1":
-        //打开基础内容页面
-        util.navigateTo("../testcom_basecontent/testcom_basecontent");
-        break;
-      default:
-        break;
-    }
   }
 })

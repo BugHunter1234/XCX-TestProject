@@ -3,6 +3,8 @@
 <import src="../../../utils/template/template.wxml" />
 <view class="base-ta-center">
   <view style="margin-bottom:20px">测试模板</view>
+  <!--template-->
   <template is="item" data="{{text: 'template模板'}}" />
+  <!--include-->
   <include src="../../../utils/template/testinclude.wxml" />
 </view>

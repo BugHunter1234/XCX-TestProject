@@ -1,3 +1,4 @@
+<!--示例include-->
 <import src="template.wxml" />
 <view>include_0</view>
 <template is="item" data="{{text: 'include模板'}}" />

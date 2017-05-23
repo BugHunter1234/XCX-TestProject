@@ -1,0 +1,36 @@
+<!--testcom_basecontent.wxml-->
+<view class="base-ta-center">
+  <view style="margin-bottom:20px">基础内容</view>
+  <view class="base-bc-gold">icon 图标</view>
+  <!--支持的图标-->
+  <view>
+    <view wx:for="{{iconArray}}" wx:key="{{index}}" style="display:inline;">
+      <icon type="{{item}}" size="40" />
+    </view>
+  </view>
+  <!--图标大小和颜色-->
+  <view>
+    <view wx:for="{{iconSize}}" wx:for-item="i">
+      <view wx:for="{{iconColor}}" wx:for-item="j" style="display:inline;">
+        <icon type="success" size="{{i}}" color="{{j}}" />
+      </view>
+    </view>
+  </view>
+  <view style="margin-top:20px" class="base-bc-gold">text 文本</view>
+  <view>
+    <text>text_0</text>
+  </view>
+  <view>
+    <!--文本长按可选-->
+    <text selectable="true">text_1</text>
+  </view>
+  <view>
+    <!--文本支持转义符"\"-->
+    <text>text_1_0\ntext_1_1</text>
+  </view>
+  <view style="margin-top:20px" class="base-bc-gold">progress 进度条</view>
+  <progress percent="80" active="true" show-info="true" style="margin:10px" />
+  <progress percent="40" stroke-width="12" style="margin:10px" />
+  <progress percent="60" activeColor="pink" backgroundColor="red" style="margin:10px" />
+  <progress percent="80" style="margin:10px" />
+</view>

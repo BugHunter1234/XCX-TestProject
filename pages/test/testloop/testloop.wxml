@@ -1,6 +1,7 @@
 <!--testloop.wxml-->
 <view class="base-ta-center">
   <view style="margin-bottom:20px">测试循环</view>
+  <!--for循环-->
   <view wx:for="{{[1, 2, 3]}}">
     <text>{{index}}*{{item}}={{index*item}}</text>
   </view>

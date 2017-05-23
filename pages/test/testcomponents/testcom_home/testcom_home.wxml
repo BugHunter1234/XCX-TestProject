@@ -1,8 +1,12 @@
 <!--testcomponents.wxml-->
 <view class="base-ta-center">
   <view style="margin-bottom:20px">测试组件</view>
-  <view bindtap="navigateTo" data-value="0">
+  <view bindtap="navigateTo" data-value="0" style="margin-bottom:20px;">
     视图容器
     <view>view scroll-view swiper movable-view</view>
+  </view>
+  <view bindtap="navigateTo" data-value="1" style="margin-bottom:20px;">
+    基础内容
+    <view>icon text progress</view>
   </view>
 </view>
